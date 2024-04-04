@@ -1,4 +1,4 @@
-# Practice for Algorithm using java 
+# 資料結構與演算法練習
 ## easyAlgorithm
 * Recursion
 * BreadthFirstSearch
