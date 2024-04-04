@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class DijkstraAlogorithmVersion2 {
     /*
@@ -24,11 +26,33 @@ public class DijkstraAlogorithmVersion2 {
 		weight.add(new Node().setThisNodeName("E").setParentNode("A").setCost(Integer.MAX_VALUE));
 		
 		//準備圖形
+		graph.put("A", List.of(new Node().setThisNodeName("B").setCost(9), 
+								new Node().setThisNodeName("C").setCost(6),
+								new Node().setThisNodeName("D").setCost(5),
+								new Node().setThisNodeName("E").setCost(3)));
+		graph.put("B", List.of(new Node().setThisNodeName("C").setCost(2)));
+		graph.put("C", List.of(new Node().setThisNodeName("D").setCost(4)));
+		graph.put("D", List.of());
+		graph.put("E", List.of());
 		
 		
+		//search this point and put brothers in pq
+//		pq.offer(null);
+		
+		//find cheapest one
+		
+		//evluate next nodes
+		
+		//assessment and renew
+
+
 	}
-	
-	
+		//search this point and put brothers in pq
+	public static void searchAddPQ(Node nodeToBeSearch) {
+		
+		
+
+	}
 	
 	private static class Node{ //內部類別加上static->讓使用此類別的人不需要new出外部類別的實體來使用此類別
 						//new出來會在記憶體畫出空間，所以指向不同個實體
